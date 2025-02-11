@@ -1,0 +1,1 @@
+/scratch/blazqul/ongoing_projects/BIOD_Lorea/bams_sashimi/GSC22_15_p7.bam,/scratch/blazqul/ongoing_projects/BIOD_Lorea/bams_sashimi/GSC22_14_p5.bam,/scratch/blazqul/ongoing_projects/BIOD_Lorea/bams_sashimi/GSC22_11_p5.bam,/scratch/blazqul/ongoing_projects/BIOD_Lorea/bams_sashimi/GSC22_20_p4.bam
