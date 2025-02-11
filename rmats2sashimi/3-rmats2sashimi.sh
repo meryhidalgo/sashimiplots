@@ -32,7 +32,7 @@ mkdir -p "$outdir"
 while IFS=$'\t' read -r gene coord1 coord2
 do 
     mkdir -p $outdir/$gene
-    /scratch/blazqul/envs/pysam/bin/python3 /scratch/blazqul/biotools_scratch/rmats2sashimi/utils/src/rmats2sashimiplot/rmats2sashimiplot.py \
+    /scratch/blazqul/envs/pysam/bin/python3 utils/src/rmats2sashimiplot/rmats2sashimiplot.py \
         --b1 b1_$group_A.txt --b2 b2_$group_B.txt \
         --l1 $group_A --l2 $group_B \
         -c $coord2:$gff3 \

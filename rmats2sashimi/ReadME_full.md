@@ -30,6 +30,9 @@ sbatch 2-list_bam_files.sh
 Three files should appear: b1_CONTRAST.txt, b2_CONTROL.txt and grouping.gf. Check none of them are empty. For now, grouping is just automatized for two groups, same as contrast and control. If more needed ask bioinformatician!
 
 5. Open 3-rmats2sashimi.sh. Again, modify **working_dir** variable, **groups** variable and **gff3** only if needed. By deafult a directory called rmats2sashimi_out inside your working_dir will be created. If there is already a folder there with that name, it will be replaced. Sashimis will be extracted with their gene_name.
+
+If working in blazqul@atlas no change is needed. If not, environment and python executable path should be modified. 
+
 ```bash
 sbatch 3-rmats2sashimi.sh
 ```

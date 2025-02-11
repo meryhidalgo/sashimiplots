@@ -22,6 +22,9 @@ Another file called config_sashimi.txt will be created with a new column with sa
 ## MAKE SURE B1, B2, GROUPING FILES ARE ALREADY CREATED IN WORKING DIR
 
 3. Open 3-rmats2sashimi.sh. Again, modify **working_dir** variable, **groups** variable and **gff3** only if needed. By deafult a directory called rmats2sashimi_out inside your working_dir will be created. If there is already a folder there with that name, it will be replaced. Sashimis will be extracted with their gene_name.
+
+If working in blazqul@atlas no change is needed. If not, environment and python executable path should be modified. 
+
 ```bash
 sbatch 3-rmats2sashimi.sh
 ```
