@@ -21,16 +21,6 @@
                     "hidden": true,
                     "default": "output-pipeline"
                 },
-                "run_porechop": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "whether to run porechop or not (not recommenden to run in local for big FASTQs)"
-                },
-                "get_bams": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "whether to output the aligned BAMs"
-                },
                 "get_sashimis": {
                     "type": "boolean",
                     "default": true,
@@ -44,25 +34,11 @@
             "description": "",
             "default": "",
             "properties": {
-                "input_fastq": {
+                "input_bams": {
                     "type": "string",
                     "format": "directory-path",
-                    "description": "path to the directory containing the FASTQ files to align",
-                    "default": "input_fastqs/"
-                },
-                "ref_fa": {
-                    "type": "string",
-                    "description": "path to the reference FASTA",
-                    "format": "file-path",
-                    "default": "reference.fa",
-                    "pattern": ".*\\.fa$"
-                },
-                "ref_bed": {
-                    "type": "string",
-                    "description": "path to the reference BED file to allow splice-aware alignment",
-                    "format": "file-path",
-                    "default": "reference.bed",
-                    "pattern": ".*\\.bed$"
+                    "description": "path to the directory containing the BAMS files to align",
+                    "default": "input_bams/"
                 },
                 "ref_gtf": {
                     "type": "string",
@@ -82,28 +58,9 @@
             },
             "required": [
                 "input_fastq",
-                "ref_fa",
-                "ref_bed",
+                "ref_gtf",
                 "plots_config"
             ]
-        },
-        "qc_options": {
-            "title": "QC options",
-            "type": "object",
-            "description": "",
-            "default": "",
-            "properties": {
-                "min_len": {
-                    "type": "integer",
-                    "default": 200,
-                    "description": "minimum length a read should have in order to be processed"
-                },
-                "max_len": {
-                    "type": "integer",
-                    "default": 5000,
-                    "description": "maximum length a read should have in order to be processed"
-                }
-            }
         },
         "plot_options": {
             "title": "Plot options",
