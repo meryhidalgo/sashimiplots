@@ -62,6 +62,24 @@
                 "plots_config"
             ]
         },
+        "qc_options": {
+            "title": "QC options",
+            "type": "object",
+            "description": "",
+            "default": "",
+            "properties": {
+                "min_len": {
+                    "type": "integer",
+                    "default": 200,
+                    "description": "minimum length a read should have in order to be processed"
+                },
+                "max_len": {
+                    "type": "integer",
+                    "default": 5000,
+                    "description": "maximum length a read should have in order to be processed"
+                }
+            }
+        },
         "plot_options": {
             "title": "Plot options",
             "type": "object",
