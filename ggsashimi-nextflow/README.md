@@ -1,4 +1,4 @@
-# a-hr/ONT-splicing-pipeline pipeline parameters
+# mcarazo/Sashimi plots pipeline
 
 
 ## Introduction
